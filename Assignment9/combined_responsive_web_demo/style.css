@@ -1,0 +1,140 @@
+/* ---------- General Reset ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Body and Global Styles ---------- */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* ---------- Header ---------- */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* ---------- Main Grid Layout ---------- */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* ---------- Common Box Style ---------- */
+.box {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* ---------- Gallery Section ---------- */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.grid-gallery img {
+  width: 100%;
+  border-radius: 8px;
+  transition: opacity 0.5s ease;
+}
+
+.grid-gallery img:hover {
+  opacity: 0.8;
+}
+
+/* ---------- Cheat Sheet List ---------- */
+.cheatsheet ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.cheatsheet li {
+  margin-bottom: 10px;
+}
+
+/* ---------- Fade-in Animation ---------- */
+.fade-in {
+  animation: fadeIn 1s ease-in both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 700px) {
+  .header-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
