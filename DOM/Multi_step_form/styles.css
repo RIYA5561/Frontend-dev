@@ -1,0 +1,29 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+.step {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 250px;
+}
+
+button {
+    padding: 8px 14px;
+    margin-right: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}

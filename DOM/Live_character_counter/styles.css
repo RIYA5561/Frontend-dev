@@ -1,0 +1,25 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+#text-area {
+    width: 350px;
+    height: 120px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    font-size: 14px;
+}
+
+#counter {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.yellow {
+    color: orange;
+}
+
+.red {
+    color: red;
+}

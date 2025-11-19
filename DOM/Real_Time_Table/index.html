@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real-Time Table Filter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>Student Table Filter</h2>
+
+    <input type="text" id="search" placeholder="Search students...">
+
+    <table id="student-table" border="1" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>CGPA</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Riya Sharma</td>
+                <td>CSE</td>
+                <td>9.1</td>
+            </tr>
+            <tr>
+                <td>Aman Verma</td>
+                <td>ECE</td>
+                <td>8.4</td>
+            </tr>
+            <tr>
+                <td>Neha Gupta</td>
+                <td>IT</td>
+                <td>8.9</td>
+            </tr>
+            <tr>
+                <td>Rohit Singh</td>
+                <td>ME</td>
+                <td>7.6</td>
+            </tr>
+            <tr>
+                <td>Pooja Jaiswal</td>
+                <td>CSE</td>
+                <td>9.3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p id="no-result" class="hidden">No results found</p>
+
+    <script src="tableFilter.js"></script>
+</body>
+</html>

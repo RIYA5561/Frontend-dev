@@ -1,0 +1,35 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+
+/* LIGHT THEME */
+body[data-theme="light"] {
+    background: #ffffff;
+    color: #000000;
+}
+
+/* DARK THEME */
+body[data-theme="dark"] {
+    background: #1b1b1b;
+    color: #ffffff;
+}
+
+/* BLUE THEME */
+body[data-theme="blue"] {
+    background: #004c99;
+    color: #ffffff;
+}
+
+button {
+    padding: 8px 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
